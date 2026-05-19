@@ -138,7 +138,15 @@ export default function InsideTheGameBookingPortal() {
               <strong>PayPal payment</strong>
               <p>Payment instruction will show: send £{total.toFixed(2)} to marc.townsend123@btinternet.com</p>
             </div>
-            <button className="primary full" onClick={confirmBooking}>Confirm Prototype Booking</button>
+            <a
+  className="primary full"
+  href={`https://paypal.me/marccharlestownsend/${total.toFixed(2)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={confirmBooking}
+>
+  Pay with PayPal
+</a></button>
           </div>
         </section>
       )}
